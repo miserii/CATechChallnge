@@ -1,2 +1,6 @@
 # abemahack-native-201909-ios
-https://www.cyberagent.co.jp/careers/students/event/detail/id=23252
+
+<p align="center">
+  <img src="https://github.com/CyberAgentHack/abemahack-native-201909-ios/blob/master/Assets/logo.png" width="800">
+</p>
+
