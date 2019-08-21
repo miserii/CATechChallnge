@@ -1,0 +1,29 @@
+{
+    "channels": [
+        {
+            "id": "ch-0",
+            "name": "Channel A",
+            "url": "https://..mp4"
+        },
+        {
+            "id": "ch-1",
+            "name": "Channel B",
+            "url": "https://..mp4"
+        },
+        {
+            "id": "ch-2",
+            "name": "Channel C",
+            "url": "https://..mp4"
+        },
+        {
+            "id": "ch-3",
+            "name": "Channel D",
+            "url": "https://..mp4"
+        },
+        {
+            "id": "ch-4",
+            "name": "Channel E",
+            "url": "https://..mp4"
+        }
+    ]
+}

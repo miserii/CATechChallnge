@@ -1,0 +1,54 @@
+{
+    "slots": [
+        {
+            "id": "E96jJvXVmRisaP",
+            "title": "AbemaNews朝／8時台グッド！モーニング",
+            "channelId": "ch-0",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "stats": {
+                "view": 5604,
+                "comment": 6
+            }
+        },
+        {
+            "id": "ARFF4LxGzzA583",
+            "title": "AbemaNews×報道ステーション",
+            "channelId": "ch-1",
+            "highlight": "Abema×報道ステーション／最新NEWS",
+            "stats": {
+                "view": 33086,
+                "comment": 1165
+            }
+        },
+        {
+            "id": "ANwcbPzR36GPoM",
+            "title": "AbemaNews夕",
+            "channelId": "ch-2",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "stats": {
+                "view": 128424,
+                "comment": 4225
+            }
+        },
+        {
+            "id": "ANwcaoKc4QUbgT",
+            "title": "14:05頃～緊急見逃し配信／吉本・岡本社長が語った”５時間”全編をもう一度②",
+            "channelId": "ch-3",
+            "highlight": "あの5時間をもう一度…緊急見逃し配信!",
+            "stats": {
+                "view": 16350,
+                "comment": 712
+            }
+        },
+        {
+            "id": "ARFF6UM5oxEeaT",
+            "title": "AbemaNews早朝／昨日のJチャン【キャッチアップ】",
+            "channelId": "ch-4",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "stats": {
+                "view": 5731,
+                "comment": 52
+            }
+        }
+    ]
+}

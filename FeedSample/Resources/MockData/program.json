@@ -1,0 +1,354 @@
+{
+    "slots": [
+        {
+            "id": "E96jMN35B92rhd",
+            "channelId": "ch-0",
+            "title": "AbemaNews×報道ステーション",
+            "highlight": "Abema×報道ステーション／最新NEWS",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jH72TgZ3LMV",
+            "channelId": "ch-0",
+            "title": "AbemaPrime【見逃し配信】",
+            "highlight": "オトナの事情をスルーする報道番組",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF6mcW8MynGf",
+            "channelId": "ch-0",
+            "title": "AbemaNews早朝",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF75XGjM4dhh",
+            "channelId": "ch-0",
+            "title": "AbemaMorning",
+            "highlight": "速報や新着ニュースを凝縮して生放送！",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jJvXVmRisaP",
+            "channelId": "ch-0",
+            "title": "AbemaNews朝／8時台グッド！モーニング",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "present"
+        },
+        {
+            "id": "E96jHiiVrDYP1q",
+            "channelId": "ch-0",
+            "title": "AbemaNews午前①",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF6TpiZ5Ao5y",
+            "channelId": "ch-0",
+            "title": "AbemaNews午前②／11時頃～菅官房長官の会見LIVEほか",
+            "highlight": "最新NEWS／官房長官の定例会見LIVEほか",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwcao4fN76BZH",
+            "channelId": "ch-0",
+            "title": "けやきヒルズ 吉本「契約書なし」公取委問題視 島田紳助氏激白／輸出規制で日韓応酬",
+            "highlight": "ランチにニュースをアップデート！",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF74zQhqT7ps",
+            "channelId": "ch-0",
+            "title": "AbemaNews午後①／14：00けやきヒルズ【見逃し配信】",
+            "highlight": "最新NEWS＆話題の動画／緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwccvwtPDcuXm",
+            "channelId": "ch-0",
+            "title": "AbemaNews午後②／大下容子ワイド！スクランブル",
+            "highlight": "NEWS／大下容子ワイド！スクランブル",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF7Pa2Ev7Aab",
+            "channelId": "ch-1",
+            "title": "AbemaNews夕",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF75RKA9vCej",
+            "channelId": "ch-1",
+            "title": "AbemaNews夜／スーパーJチャンネル",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF4xPPpsefNX",
+            "channelId": "ch-1",
+            "title": "AbemaPrime 〝吉本改革〟大崎会長ナシでは会社ピンチ!?伝説マネと議論",
+            "highlight": "オトナの事情をスルーする報道番組",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF756trMeVYb",
+            "channelId": "ch-1",
+            "title": "NewsBAR橋下　ゲスト：千原せいじ（お笑い芸人）",
+            "highlight": "橋下徹がNewsBARに注目ゲスト招く!",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF4LxGzzA583",
+            "channelId": "ch-1",
+            "title": "AbemaNews×報道ステーション",
+            "highlight": "Abema×報道ステーション／最新NEWS",
+            "timeState": "present"
+        },
+        {
+            "id": "ARFF4LunvkN6um",
+            "channelId": "ch-1",
+            "title": "AbemaPrime【見逃し配信】",
+            "highlight": "オトナの事情をスルーする報道番組",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF5ZPbkGYrE3",
+            "channelId": "ch-1",
+            "title": "AbemaNews早朝",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF7gmwUm4DSF",
+            "channelId": "ch-1",
+            "title": "AbemaMorning",
+            "highlight": "速報や新着ニュースを凝縮して生放送！",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF4eS82DTYJT",
+            "channelId": "ch-1",
+            "title": "AbemaNews朝／8時台グッド！モーニング",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwcbQdFegop1d",
+            "channelId": "ch-1",
+            "title": "AbemaNews午前①／10時すぎ～菅官房長官の会見LIVEほか",
+            "highlight": "最新NEWS／官房長官の定例会見LIVEほか",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF5FaKXTWPTV",
+            "channelId": "ch-2",
+            "title": "AbemaNews午前②",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jJvrRdfG44o",
+            "channelId": "ch-2",
+            "title": "けやきヒルズ 台風週末上陸へ穂川予報士解説／吉本書面契約に 宮迫＆田村の寄付拒否",
+            "highlight": "ランチにニュースをアップデート！",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF3jfbpXbt8o",
+            "channelId": "ch-2",
+            "title": "AbemaNews午後①／14：00けやきヒルズ【見逃し配信】",
+            "highlight": "最新NEWS＆話題の動画／緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jH73SS1Qr8F",
+            "channelId": "ch-2",
+            "title": "AbemaNews午後②／大下容子ワイド！スクランブル",
+            "highlight": "NEWS／大下容子ワイド！スクランブル",
+            "timeState": "past"
+        },
+        {
+            "id": "ANwcbPzR36GPoM",
+            "channelId": "ch-2",
+            "title": "AbemaNews夕",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "present"
+        },
+        {
+            "id": "ARFF75Vo6icdQK",
+            "channelId": "ch-2",
+            "title": "AbemaNews夜／スーパーJチャンネル",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF5Zi3dgGBL3",
+            "channelId": "ch-2",
+            "title": "AbemaPrime 重度障害者が国会に〝車椅子の大臣〟八代英太＆乙武と考える",
+            "highlight": "オトナの事情をスルーする報道番組",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwcao1ByhGYrs",
+            "channelId": "ch-2",
+            "title": "AbemaNews23時／AbemaSports",
+            "highlight": "最新NEWS＆話題／AbemaSports！",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwccKVn8cZpes",
+            "channelId": "ch-2",
+            "title": "AbemaNews×報道ステーション",
+            "highlight": "Abema×報道ステーション／最新NEWS",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jKY7ccmi63H",
+            "channelId": "ch-2",
+            "title": "AbemaPrime【見逃し配信】",
+            "highlight": "オトナの事情をスルーする報道番組",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF5FujNWsRLK",
+            "channelId": "ch-3",
+            "title": "AbemaNews早朝",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF5FXKnEv7if",
+            "channelId": "ch-3",
+            "title": "AbemaNews朝",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jMMRCdjfyQT",
+            "channelId": "ch-3",
+            "title": "AbemaNews午前",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF7PUY5q8SCf",
+            "channelId": "ch-3",
+            "title": "12:20頃～緊急見逃し配信／吉本・岡本社長が語った”５時間”全編をもう一度①",
+            "highlight": "あの5時間をもう一度…緊急見逃し配信!",
+            "timeState": "past"
+        },
+        {
+            "id": "ANwcaoKc4QUbgT",
+            "channelId": "ch-3",
+            "title": "14:05頃～緊急見逃し配信／吉本・岡本社長が語った”５時間”全編をもう一度②",
+            "highlight": "あの5時間をもう一度…緊急見逃し配信!",
+            "timeState": "present"
+        },
+        {
+            "id": "ANwcccVFYCeEbZ",
+            "channelId": "ch-3",
+            "title": "16:15頃～緊急見逃し配信／吉本・岡本社長が語った”５時間”全編をもう一度③",
+            "highlight": "あの5時間をもう一度…緊急見逃し配信!",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jH7Etj1CAGX",
+            "channelId": "ch-3",
+            "title": "テレメンタリー「夢も、希望も ～仮放免者の未来～」",
+            "highlight": "社会派ドキュメント「テレメンタリー」",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwceSJjxfARVZ",
+            "channelId": "ch-3",
+            "title": "緊急見逃し配信／吉本・岡本社長が語った”５時間”全編をもう一度④",
+            "highlight": "あの5時間をもう一度…緊急見逃し配信!",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jLkrsv7cP9Z",
+            "channelId": "ch-3",
+            "title": "NewsBAR橋下　ゲスト：千原せいじ（お笑い芸人）【見逃し配信】",
+            "highlight": "橋下徹がNewsBARに注目ゲスト招く!",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jMMFFfXK7hh",
+            "channelId": "ch-3",
+            "title": "Wの悲喜劇again「リケジョが地球を救う！」",
+            "highlight": "男子禁制！SHELLYの女子ニュース",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwcdEHJ6eaTsm",
+            "channelId": "ch-4",
+            "title": "AbemaNews22時",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF4ed71ebyuy",
+            "channelId": "ch-4",
+            "title": "AbemaNews24時／AbemaSports！",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF43uK5Ywj4B",
+            "channelId": "ch-4",
+            "title": "Wの悲喜劇again「リケジョが地球を救う！」",
+            "highlight": "男子禁制！SHELLYの女子ニュース",
+            "timeState": "past"
+        },
+        {
+            "id": "E96jMMn78KGUs9",
+            "channelId": "ch-4",
+            "title": "AbemaNews深夜",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "past"
+        },
+        {
+            "id": "ARFF6UM5oxEeaT",
+            "channelId": "ch-4",
+            "title": "AbemaNews早朝／昨日のJチャン【キャッチアップ】",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "present"
+        },
+        {
+            "id": "ARFF3kbsCfKggX",
+            "channelId": "ch-4",
+            "title": "AbemaNews朝",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ARFF75bGEuotVm",
+            "channelId": "ch-4",
+            "title": "AbemaNews午前①",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "ANwccczd9H5wB5",
+            "channelId": "ch-4",
+            "title": "テレメンタリー「夢も、希望も ～仮放免者の未来～」",
+            "highlight": "社会派ドキュメント「テレメンタリー」",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jHRLcB6Kgbq",
+            "channelId": "ch-4",
+            "title": "AbemaNews午前②",
+            "highlight": "２４時間ニュース＆話題！緊急生中継も",
+            "timeState": "future"
+        },
+        {
+            "id": "E96jJLLaeePwbM",
+            "channelId": "ch-4",
+            "title": "Abema的ニュースショー　「パワハラの実態」秘書が激白　石崎議員の進退は",
+            "highlight": "ニュースを「的外れ」に斬る番組！",
+            "timeState": "future"
+        }
+    ]
+}
