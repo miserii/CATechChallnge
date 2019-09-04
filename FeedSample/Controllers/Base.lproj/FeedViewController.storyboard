@@ -19,11 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PBv-oS-gHh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="PBv-oS-gHh" secondAttribute="height" multiplier="16:9" id="aKA-1S-H1p"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NpZ-IZ-IRh">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,6 +34,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PBv-oS-gHh" secondAttribute="trailing" id="HYW-3C-s4e"/>
                             <constraint firstItem="PBv-oS-gHh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VK6-UF-YCL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PBv-oS-gHh" secondAttribute="bottom" id="kqK-4M-rm6"/>
                             <constraint firstItem="PBv-oS-gHh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rw8-ik-Q0T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

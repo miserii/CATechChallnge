@@ -1,7 +1,9 @@
 import AVKit
 import UIKit
 
-final class VideoCell: UICollectionViewCell {
+/// 上に映像が付いているFeed全体の再利用するセル
+///
+final class FeedCell: UICollectionViewCell {
 
     static var className: String {
         return String(describing: self)
@@ -12,6 +14,7 @@ final class VideoCell: UICollectionViewCell {
         playerVC.showsPlaybackControls = false
         playerVC.videoGravity = .resizeAspectFill
         playerVC.view.isUserInteractionEnabled = false
+        playerVC.view.backgroundColor = .darkGray
         return playerVC
     }()
 
@@ -24,8 +27,9 @@ final class VideoCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             contentView.leftAnchor.constraint(equalTo: playerViewController.view.leftAnchor),
             contentView.topAnchor.constraint(equalTo: playerViewController.view.topAnchor),
-            contentView.bottomAnchor.constraint(equalTo: playerViewController.view.bottomAnchor),
-            contentView.rightAnchor.constraint(equalTo: playerViewController.view.rightAnchor)
+            contentView.rightAnchor.constraint(equalTo: playerViewController.view.rightAnchor),
+            playerViewController.view.widthAnchor.constraint(equalTo: playerViewController.view.heightAnchor,
+                                                             multiplier: 16.0 / 9.0)
             ])
     }
 

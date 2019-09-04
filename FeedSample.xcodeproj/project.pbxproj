@@ -15,8 +15,8 @@
 		FFB25C9A22FD836700CBB221 /* BroadcastSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9922FD836700CBB221 /* BroadcastSlot.swift */; };
 		FFB25C9C22FD83D400CBB221 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9B22FD83D400CBB221 /* Stats.swift */; };
 		FFB25C9E22FD84EE00CBB221 /* ProgramSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9D22FD84EE00CBB221 /* ProgramSlot.swift */; };
-		FFB25CA3230CDF3C00CBB221 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25CA2230CDF3C00CBB221 /* VideoCell.swift */; };
-		FFB25CA5230CDF4B00CBB221 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB25CA4230CDF4B00CBB221 /* VideoCell.xib */; };
+		FFB25CA3230CDF3C00CBB221 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */; };
+		FFB25CA5230CDF4B00CBB221 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */; };
 		FFB25CA7230CE47C00CBB221 /* dev_rabbit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FFB25CA6230CE47B00CBB221 /* dev_rabbit.mp4 */; };
 		FFBB477222F139E700C3A573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB477122F139E700C3A573 /* AppDelegate.swift */; };
 		FFBB477422F139E700C3A573 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB477322F139E700C3A573 /* FeedViewController.swift */; };
@@ -53,8 +53,8 @@
 		FFB25C9922FD836700CBB221 /* BroadcastSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSlot.swift; sourceTree = "<group>"; };
 		FFB25C9B22FD83D400CBB221 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		FFB25C9D22FD84EE00CBB221 /* ProgramSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSlot.swift; sourceTree = "<group>"; };
-		FFB25CA2230CDF3C00CBB221 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		FFB25CA4230CDF4B00CBB221 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		FFB25CA6230CE47B00CBB221 /* dev_rabbit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev_rabbit.mp4; sourceTree = "<group>"; };
 		FFBB476E22F139E700C3A573 /* FeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBB477122F139E700C3A573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,8 +137,8 @@
 		FFB25CA8230CE94E00CBB221 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFB25CA2230CDF3C00CBB221 /* VideoCell.swift */,
-				FFB25CA4230CDF4B00CBB221 /* VideoCell.xib */,
+				FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */,
+				FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 				FFBB477722F139E700C3A573 /* FeedViewController.storyboard in Resources */,
 				FFBB477C22F139F000C3A573 /* LaunchScreen.storyboard in Resources */,
 				FFB25C9422FD703000CBB221 /* program.json in Resources */,
-				FFB25CA5230CDF4B00CBB221 /* VideoCell.xib in Resources */,
+				FFB25CA5230CDF4B00CBB221 /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +349,7 @@
 				FFB25C9622FD714B00CBB221 /* MockApiSession.swift in Sources */,
 				FFB25C9E22FD84EE00CBB221 /* ProgramSlot.swift in Sources */,
 				FFB25C9C22FD83D400CBB221 /* Stats.swift in Sources */,
-				FFB25CA3230CDF3C00CBB221 /* VideoCell.swift in Sources */,
+				FFB25CA3230CDF3C00CBB221 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
