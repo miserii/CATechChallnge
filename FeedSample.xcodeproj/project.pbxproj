@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A66D5ACF250E2F59001059C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66D5ACE250E2F59001059C2 /* Comment.swift */; };
+		A66D5AD3250E2FAE001059C2 /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = A66D5AD2250E2FAE001059C2 /* comments.json */; };
 		FFB25C9022FD702200CBB221 /* broadcast.json in Resources */ = {isa = PBXBuildFile; fileRef = FFB25C8F22FD702200CBB221 /* broadcast.json */; };
 		FFB25C9222FD702900CBB221 /* channels.json in Resources */ = {isa = PBXBuildFile; fileRef = FFB25C9122FD702900CBB221 /* channels.json */; };
 		FFB25C9422FD703000CBB221 /* program.json in Resources */ = {isa = PBXBuildFile; fileRef = FFB25C9322FD703000CBB221 /* program.json */; };
@@ -15,8 +17,8 @@
 		FFB25C9A22FD836700CBB221 /* BroadcastSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9922FD836700CBB221 /* BroadcastSlot.swift */; };
 		FFB25C9C22FD83D400CBB221 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9B22FD83D400CBB221 /* Stats.swift */; };
 		FFB25C9E22FD84EE00CBB221 /* ProgramSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25C9D22FD84EE00CBB221 /* ProgramSlot.swift */; };
-		FFB25CA3230CDF3C00CBB221 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */; };
-		FFB25CA5230CDF4B00CBB221 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */; };
+		FFB25CA3230CDF3C00CBB221 /* FeedCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25CA2230CDF3C00CBB221 /* FeedCellViewController.swift */; };
+		FFB25CA5230CDF4B00CBB221 /* FeedCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB25CA4230CDF4B00CBB221 /* FeedCellViewController.xib */; };
 		FFBB477222F139E700C3A573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB477122F139E700C3A573 /* AppDelegate.swift */; };
 		FFBB477422F139E700C3A573 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB477322F139E700C3A573 /* FeedViewController.swift */; };
 		FFBB477722F139E700C3A573 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBB477522F139E700C3A573 /* FeedViewController.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A66D5ACE250E2F59001059C2 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		A66D5AD2250E2FAE001059C2 /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		FFB25C8F22FD702200CBB221 /* broadcast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = broadcast.json; sourceTree = "<group>"; };
 		FFB25C9122FD702900CBB221 /* channels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = channels.json; sourceTree = "<group>"; };
 		FFB25C9322FD703000CBB221 /* program.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = program.json; sourceTree = "<group>"; };
@@ -52,8 +56,8 @@
 		FFB25C9922FD836700CBB221 /* BroadcastSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSlot.swift; sourceTree = "<group>"; };
 		FFB25C9B22FD83D400CBB221 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		FFB25C9D22FD84EE00CBB221 /* ProgramSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSlot.swift; sourceTree = "<group>"; };
-		FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		FFB25CA2230CDF3C00CBB221 /* FeedCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewController.swift; sourceTree = "<group>"; };
+		FFB25CA4230CDF4B00CBB221 /* FeedCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCellViewController.xib; sourceTree = "<group>"; };
 		FFBB476E22F139E700C3A573 /* FeedSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBB477122F139E700C3A573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBB477322F139E700C3A573 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			children = (
 				FFB25C8F22FD702200CBB221 /* broadcast.json */,
 				FFB25C9122FD702900CBB221 /* channels.json */,
+				A66D5AD2250E2FAE001059C2 /* comments.json */,
 				FFB25C9322FD703000CBB221 /* program.json */,
 			);
 			path = MockData;
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB25C9922FD836700CBB221 /* BroadcastSlot.swift */,
+				A66D5ACE250E2F59001059C2 /* Comment.swift */,
 				FFB25C9722FD728900CBB221 /* Channel.swift */,
 				FFB25C9D22FD84EE00CBB221 /* ProgramSlot.swift */,
 				FFB25C9B22FD83D400CBB221 /* Stats.swift */,
@@ -134,8 +140,8 @@
 		FFB25CA8230CE94E00CBB221 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FFB25CA2230CDF3C00CBB221 /* FeedCell.swift */,
-				FFB25CA4230CDF4B00CBB221 /* FeedCell.xib */,
+				FFB25CA2230CDF3C00CBB221 /* FeedCellViewController.swift */,
+				FFB25CA4230CDF4B00CBB221 /* FeedCellViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,13 +277,16 @@
 				TargetAttributes = {
 					FFBB476D22F139E700C3A573 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 					};
 					FFBB478122F139F000C3A573 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = FFBB476D22F139E700C3A573;
 					};
 					FFBB478C22F139F000C3A573 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = FFBB476D22F139E700C3A573;
 					};
 				};
@@ -310,10 +319,11 @@
 				FFBB477922F139F000C3A573 /* Assets.xcassets in Resources */,
 				FFB25C9022FD702200CBB221 /* broadcast.json in Resources */,
 				FFB25C9222FD702900CBB221 /* channels.json in Resources */,
+				A66D5AD3250E2FAE001059C2 /* comments.json in Resources */,
 				FFBB477722F139E700C3A573 /* FeedViewController.storyboard in Resources */,
 				FFBB477C22F139F000C3A573 /* LaunchScreen.storyboard in Resources */,
 				FFB25C9422FD703000CBB221 /* program.json in Resources */,
-				FFB25CA5230CDF4B00CBB221 /* FeedCell.xib in Resources */,
+				FFB25CA5230CDF4B00CBB221 /* FeedCellViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +355,9 @@
 				FFB25C9622FD714B00CBB221 /* MockApiSession.swift in Sources */,
 				FFB25C9E22FD84EE00CBB221 /* ProgramSlot.swift in Sources */,
 				FFB25C9C22FD83D400CBB221 /* Stats.swift in Sources */,
-				FFB25CA3230CDF3C00CBB221 /* FeedCell.swift in Sources */,
+				FFB25CA3230CDF3C00CBB221 /* FeedCellViewController.swift in Sources */,
+				A66D5ACF250E2F59001059C2 /* Comment.swift in Sources */,
+				FFB25CA3230CDF3C00CBB221 /* FeedCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -547,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -566,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedSample.app/FeedSample";
 			};
@@ -586,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedSample.app/FeedSample";
 			};
@@ -605,7 +617,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedSample;
 			};
@@ -624,7 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cyberagent.FeedSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FeedSample;
 			};

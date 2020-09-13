@@ -6,8 +6,8 @@
 
 ## Requirement
 
-- Xcode10.1
-- Swift4.2
+- Xcode 11.5
+- Swift 5.2.4
 
 ## Behaviour
 
