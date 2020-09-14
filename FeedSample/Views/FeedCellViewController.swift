@@ -54,6 +54,16 @@ final class FeedCellViewController: UIViewController {
         playerViewController.player = nil
     }
     
+    func Tweet() {
+        //        TODO: GIF付きのツイートをする
+        let text = "ここにいい感じの文章\n#ハッシュタグ"
+        let encodedText = text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        if let encodedText = encodedText,
+            let url = URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
     //    TODO: GIFが作成できたタイミングで出す
     func Alert() {
         let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message:  "作成したGIFをツイートする", preferredStyle:  UIAlertController.Style.alert)
