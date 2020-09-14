@@ -1,5 +1,6 @@
 import AVKit
 import UIKit
+import Regift
 
 final class FeedCellViewController: UIViewController {
 
@@ -54,7 +55,19 @@ final class FeedCellViewController: UIViewController {
         playerViewController.player = nil
     }
     
-    func Tweet() {
+    func createGif() {
+        let videoURL   = URL(string: "")!
+        //        TODO: 取得した時間で指定する
+        let startTime = Float(30)
+        let duration  = Float(15)
+        let frameRate = 15
+        
+        Regift.createGIFFromSource(videoURL, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
+            print("Gif saved to \(String(describing: result))")
+        }
+    }
+    
+    func tweet() {
         //        TODO: GIF付きのツイートをする
         let text = "ここにいい感じの文章\n#ハッシュタグ"
         let encodedText = text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
@@ -65,7 +78,7 @@ final class FeedCellViewController: UIViewController {
     }
     
     //    TODO: GIFが作成できたタイミングで出す
-    func Alert() {
+    func alert() {
         let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message:  "作成したGIFをツイートする", preferredStyle:  UIAlertController.Style.alert)
         let confirmAction: UIAlertAction = UIAlertAction(title: "ツイート", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
