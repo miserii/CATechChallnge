@@ -8,12 +8,14 @@ target 'FeedSample' do
   # Pods for FeedSample
 
   target 'FeedSampleTests' do
+  pod "Regift"
     inherit! :search_paths
     # Pods for testing
   end
 
   target 'FeedSampleUITests' do
     # Pods for testing
+  pod "Regift"
   end
 
 end
