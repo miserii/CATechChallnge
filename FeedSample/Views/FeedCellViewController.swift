@@ -16,6 +16,7 @@ final class FeedCellViewController: UIViewController {
             print("ロングタップスタート")
             //            ここでstartTime取得
         } else if sender.state == .ended {
+            
             /*
             print("ロングタップ終了。gif生成スタート")
             let videoURL   = URL(string: "これどうやって取得するん、、")!
