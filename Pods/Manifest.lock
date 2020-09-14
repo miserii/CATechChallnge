@@ -1,0 +1,16 @@
+PODS:
+  - Regift (1.5.0)
+
+DEPENDENCIES:
+  - Regift
+
+SPEC REPOS:
+  trunk:
+    - Regift
+
+SPEC CHECKSUMS:
+  Regift: d097afd401021f4f42b102ee125ceeb125a38caf
+
+PODFILE CHECKSUM: f84e6d57ded80b60571c8b58c7229f45cb5f0f2e
+
+COCOAPODS: 1.9.3

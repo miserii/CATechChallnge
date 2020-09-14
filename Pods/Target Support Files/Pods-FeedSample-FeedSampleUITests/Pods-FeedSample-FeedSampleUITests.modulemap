@@ -1,0 +1,6 @@
+module Pods_FeedSample_FeedSampleUITests {
+  umbrella header "Pods-FeedSample-FeedSampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
