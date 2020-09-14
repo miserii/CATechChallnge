@@ -8,7 +8,7 @@ final class FeedCellViewController: UIViewController {
     private(set) var page: Int?
 
     @IBOutlet private weak var playerContainerView: UIView!
-    @IBOutlet var gifCreateButton: UIButton!
+//    TODO: 動画長押しで実装したい
     @IBOutlet var longTapSensor: UITapGestureRecognizer!
 //    TODO: 後でボタン作成とtimeSensorの有効化
     @IBAction func timeSensor(_ sender: UITapGestureRecognizer) {
@@ -16,6 +16,7 @@ final class FeedCellViewController: UIViewController {
             print("ロングタップスタート")
             //            ここでstartTime取得
         } else if sender.state == .ended {
+            /*
             print("ロングタップ終了。gif生成スタート")
             let videoURL   = URL(string: "これどうやって取得するん、、")!
             //        TODO: 取得した時間で指定する
@@ -26,7 +27,9 @@ final class FeedCellViewController: UIViewController {
             Regift.createGIFFromSource(videoURL, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
                 print("Gif saved to \(String(describing: result))")
             }
+            */
         }
+        alert()
     }
     
     private let playerViewController: AVPlayerViewController = {
