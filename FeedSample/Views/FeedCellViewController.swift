@@ -9,9 +9,9 @@ final class FeedCellViewController: UIViewController {
 
     @IBOutlet private weak var playerContainerView: UIView!
 //    TODO: 動画長押しで実装したい
-    @IBOutlet var longTapSensor: UITapGestureRecognizer!
+    @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
 //    TODO: 後でボタン作成とtimeSensorの有効化
-    @IBAction func timeSensor(_ sender: UITapGestureRecognizer) {
+    @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
             //            ここでstartTime取得
