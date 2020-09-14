@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedCellViewController" customModule="FeedSample" customModuleProvider="target">
             <connections>
-                <outlet property="longTapSensor" destination="jXv-TN-lGK" id="ttV-BF-GHC"/>
+                <outlet property="longTapSensor" destination="m6c-pG-bjj" id="sL8-D4-H86"/>
                 <outlet property="playerContainerView" destination="4y8-qe-LgY" id="38A-dL-eGe"/>
                 <outlet property="view" destination="UHG-cQ-B8V" id="mQ6-zH-Yjb"/>
             </connections>
@@ -28,7 +28,7 @@
                         <constraint firstAttribute="width" secondItem="4y8-qe-LgY" secondAttribute="height" multiplier="16:9" id="GyA-68-5Qr"/>
                     </constraints>
                     <connections>
-                        <outletCollection property="gestureRecognizers" destination="jXv-TN-lGK" appends="YES" id="vpP-ii-QF9"/>
+                        <outletCollection property="gestureRecognizers" destination="m6c-pG-bjj" appends="YES" id="cFj-3d-oDC"/>
                     </connections>
                 </view>
             </subviews>
@@ -43,10 +43,10 @@
             <viewLayoutGuide key="safeArea" id="rFb-jL-WT3"/>
             <point key="canvasLocation" x="540" y="718"/>
         </view>
-        <tapGestureRecognizer id="jXv-TN-lGK">
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="m6c-pG-bjj">
             <connections>
-                <action selector="timeSensor:" destination="-1" id="bgE-5r-hkE"/>
+                <action selector="timeSensor:" destination="-1" id="m29-ic-Tim"/>
             </connections>
-        </tapGestureRecognizer>
+        </pongPressGestureRecognizer>
     </objects>
 </document>
