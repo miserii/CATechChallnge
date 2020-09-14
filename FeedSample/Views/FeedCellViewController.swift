@@ -8,7 +8,20 @@ final class FeedCellViewController: UIViewController {
     private(set) var page: Int?
 
     @IBOutlet private weak var playerContainerView: UIView!
-
+    @IBOutlet var gifCreateButton: UIButton!
+    @IBOutlet var longTapSensor: UITapGestureRecognizer!
+//    TODO: 後でボタン作成とtimeSensorの有効化
+    @IBAction func timeSensor(_ sender: UITapGestureRecognizer) {
+        if sender.state == .began {
+            print("ロングタップスタート")
+            //            ここでstartTime取得
+        } else if sender.state == .ended {
+            print("ロングタップ終了")
+            //            ここでdurationを取得
+            //            ここでgif生成スタートする
+        }
+    }
+    
     private let playerViewController: AVPlayerViewController = {
         let playerVC = AVPlayerViewController()
         playerVC.showsPlaybackControls = false
