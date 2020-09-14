@@ -8,19 +8,17 @@ final class FeedCellViewController: UIViewController {
     private(set) var page: Int?
 
     @IBOutlet private weak var playerContainerView: UIView!
-//    TODO: 動画長押しで実装したい
     @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
-//    TODO: 後でボタン作成とtimeSensorの有効化
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
+            return
             //            ここでstartTime取得
         } else if sender.state == .ended {
-            
             /*
-             print("ロングタップ終了。gif生成スタート")
+             TODO: URL変換
              let videoURL   = URL(string: "これどうやって取得するん、、")!
-             //        TODO: 取得した時間で指定する
+             TODO: 取得した時間で指定する
              let startTime = Float(30)
              let duration  = Float(15)
              let frameRate = 15
