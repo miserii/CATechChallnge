@@ -16,9 +16,16 @@ final class FeedCellViewController: UIViewController {
             print("ロングタップスタート")
             //            ここでstartTime取得
         } else if sender.state == .ended {
-            print("ロングタップ終了")
-            //            ここでdurationを取得
-            //            ここでgif生成スタートする
+            print("ロングタップ終了。gif生成スタート")
+            let videoURL   = URL(string: "これどうやって取得するん、、")!
+            //        TODO: 取得した時間で指定する
+            let startTime = Float(30)
+            let duration  = Float(15)
+            let frameRate = 15
+            
+            Regift.createGIFFromSource(videoURL, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
+                print("Gif saved to \(String(describing: result))")
+            }
         }
     }
     
@@ -66,18 +73,6 @@ final class FeedCellViewController: UIViewController {
 
     func stop() {
         playerViewController.player = nil
-    }
-    
-    func createGif() {
-        let videoURL   = URL(string: "")!
-        //        TODO: 取得した時間で指定する
-        let startTime = Float(30)
-        let duration  = Float(15)
-        let frameRate = 15
-        
-        Regift.createGIFFromSource(videoURL, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
-            print("Gif saved to \(String(describing: result))")
-        }
     }
     
     func tweet() {
