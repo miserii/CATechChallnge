@@ -53,6 +53,22 @@ final class FeedCellViewController: UIViewController {
     func stop() {
         playerViewController.player = nil
     }
+    
+    //    TODO: GIFが作成できたタイミングで出す
+    func Alert() {
+        let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message:  "作成したGIFをツイートする", preferredStyle:  UIAlertController.Style.alert)
+        let confirmAction: UIAlertAction = UIAlertAction(title: "ツイート", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            
+        })
+        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("キャンセル")
+        })
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
 extension FeedCellViewController {
