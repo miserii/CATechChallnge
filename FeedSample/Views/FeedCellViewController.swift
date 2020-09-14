@@ -12,7 +12,6 @@ final class FeedCellViewController: UIViewController {
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
-            return
             //            ここでstartTime取得
         } else if sender.state == .ended {
             /*
@@ -92,11 +91,9 @@ final class FeedCellViewController: UIViewController {
         let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message:  "作成したGIFをツイートする", preferredStyle:  UIAlertController.Style.alert)
         let confirmAction: UIAlertAction = UIAlertAction(title: "ツイート", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
-            
         })
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
             (action: UIAlertAction!) -> Void in
-            print("キャンセル")
         })
         alert.addAction(cancelAction)
         alert.addAction(confirmAction)
