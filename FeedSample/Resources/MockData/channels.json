@@ -1,29 +1,34 @@
 {
-    "channels": [
-        {
-            "id": "ch-0",
-            "name": "Channel A",
-            "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_01.m3u8"
-        },
-        {
-            "id": "ch-1",
-            "name": "Channel B",
-            "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_02.m3u8"
-        },
-        {
-            "id": "ch-2",
-            "name": "Channel C",
-            "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_03.m3u8"
-        },
-        {
-            "id": "ch-3",
-            "name": "Channel D",
-            "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_04.m3u8"
-        },
-        {
-            "id": "ch-4",
-            "name": "Channel E",
-            "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_05.m3u8"
-        }
-    ]
+  "channels": [
+    {
+      "id": "ch-0",
+      "name": "Channel A",
+      "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_01.m3u8",
+      "mp4": "https://github.com/CyberAgentHack/abemahack-sample-video/blob/master/assets/progressive/abema_test_movie_01.mp4"
+    },
+    {
+      "id": "ch-1",
+      "name": "Channel B",
+      "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_02.m3u8",
+      "mp4": "https://github.com/CyberAgentHack/abemahack-sample-video/blob/master/assets/progressive/abema_test_movie_02.mp4"
+    },
+    {
+      "id": "ch-2",
+      "name": "Channel C",
+      "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_03.m3u8",
+      "mp4": "https://github.com/CyberAgentHack/abemahack-sample-video/blob/master/assets/progressive/abema_test_movie_03.mp4"
+    },
+    {
+      "id": "ch-3",
+      "name": "Channel D",
+      "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_04.m3u8",
+      "mp4": "https://github.com/CyberAgentHack/abemahack-sample-video/blob/master/assets/progressive/abema_test_movie_04.mp4"
+    },
+    {
+      "id": "ch-4",
+      "name": "Channel E",
+      "url": "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_05.m3u8",
+      "mp4": "https://github.com/CyberAgentHack/abemahack-sample-video/blob/master/assets/progressive/abema_test_movie_05.mp4"
+    }
+  ]
 }
