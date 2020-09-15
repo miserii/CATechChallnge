@@ -99,19 +99,8 @@ final class FeedCellViewController: UIViewController {
     }
     
     func tweet(string: String, media: Data) {
-        let swifter = Swifter(consumerKey: "3YZegq1DqWZWkWFA3ZpQRy7d6", consumerSecret: "cboDNBb3Ci54P8GYlg7paZYmhQRLRfSQlTTxFNyMbIC4irSZh8")
-        swifter.authorize(
-            withCallback: URL(string: "swifter-3YZegq1DqWZWkWFA3ZpQRy7d6://")!,
-            presentingFrom: nil,
-            success: { accessToken, response in
-                swifter.postTweet(status: string, media: media, success: { (json) in
-                    print(json)
-                }, failure: { (error) in
-                    print(error)
-                })
-        }) { error in
-            print(error)
-        }
+        let tweetViewController = TweetViewController(media: media)
+        present(tweetViewController, animated: true, completion: nil)
     }
     
     func alertAndTweet(string: String, media: Data) {

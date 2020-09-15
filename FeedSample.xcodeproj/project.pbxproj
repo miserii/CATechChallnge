@@ -14,6 +14,7 @@
 		466B20E52510C8C60020FBC8 /* abema_test_movie_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DD2510C2870020FBC8 /* abema_test_movie_05.mp4 */; };
 		466B20E72510DE7F0020FBC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 466B20E62510DE7F0020FBC8 /* GoogleService-Info.plist */; };
 		466B20E92510E7B30020FBC8 /* abema_test_movie_04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20E82510E76B0020FBC8 /* abema_test_movie_04.mp4 */; };
+		46E8370525110E9F000F5472 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8370425110E9F000F5472 /* TweetViewController.swift */; };
 		56B723AA907772FA2211FB51 /* libPods-FeedSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C169C4DF3AD700AAD87C4DC /* libPods-FeedSample.a */; };
 		A26D8AFBE4F29721BF28BE94 /* libPods-FeedSample-FeedSampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A2971573B897F7B4D6CC72 /* libPods-FeedSample-FeedSampleUITests.a */; };
 		A66D5ACF250E2F59001059C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66D5ACE250E2F59001059C2 /* Comment.swift */; };
@@ -66,6 +67,7 @@
 		466B20E62510DE7F0020FBC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		466B20E82510E76B0020FBC8 /* abema_test_movie_04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abema_test_movie_04.mp4; sourceTree = "<group>"; };
 		466B20EA2510F3840020FBC8 /* FeedSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedSample.entitlements; sourceTree = "<group>"; };
+		46E8370425110E9F000F5472 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
 		521365EF858B861399673478 /* Pods-FeedSample-FeedSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedSample-FeedSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A192A15DBFB96C672ED8CD7 /* Pods-FeedSample-FeedSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedSample-FeedSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D7ED2774D1C3F16976B7B76 /* libPods-FeedSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +197,7 @@
 			children = (
 				FFB25CA2230CDF3C00CBB221 /* FeedCellViewController.swift */,
 				FFB25CA4230CDF4B00CBB221 /* FeedCellViewController.xib */,
+				46E8370425110E9F000F5472 /* TweetViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 			files = (
 				FFBB477222F139E700C3A573 /* AppDelegate.swift in Sources */,
 				FFB25C9A22FD836700CBB221 /* BroadcastSlot.swift in Sources */,
+				46E8370525110E9F000F5472 /* TweetViewController.swift in Sources */,
 				FFB25C9822FD728900CBB221 /* Channel.swift in Sources */,
 				FFBB477422F139E700C3A573 /* FeedViewController.swift in Sources */,
 				FFB25C9622FD714B00CBB221 /* MockApiSession.swift in Sources */,
