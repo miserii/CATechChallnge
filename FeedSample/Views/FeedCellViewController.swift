@@ -9,8 +9,8 @@ final class FeedCellViewController: UIViewController {
     private(set) var channel: Channel?
     private(set) var page: Int?
     private(set) var item: AVPlayerItem?
-    private(set) var startTime: Float = 0
-    private(set) var endTime: Float = 0
+    private(set) var startTime: Double = 0
+    private(set) var endTime: Double = 0
     
     struct Cannel: Codable {
         let id: String
@@ -25,12 +25,12 @@ final class FeedCellViewController: UIViewController {
         if sender.state == .began {
             print("ロングタップスタート")
             if let item = item {
-                let currendSecond: Float = Float(CMTimeGetSeconds(item.currentTime()))
+                let currendSecond: Double = Double(CMTimeGetSeconds(item.currentTime()))
                 startTime = currendSecond
             }
         } else if sender.state == .ended {
             if let item = item {
-                let currendSecond: Float = Float(CMTimeGetSeconds(item.currentTime()))
+                let currendSecond: Double = Double(CMTimeGetSeconds(item.currentTime()))
                 endTime = currendSecond
             }
             let url = URL(string: channel!.mp4)!
