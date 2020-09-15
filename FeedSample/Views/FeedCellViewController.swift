@@ -2,35 +2,46 @@ import AVKit
 import UIKit
 import Regift
 import Swifter
+import AVFoundation
 
 final class FeedCellViewController: UIViewController {
 
     private(set) var channel: Channel?
     private(set) var page: Int?
+    private(set) var item: AVPlayerItem?
+    private(set) var startTime: Float = 0
+    private(set) var endTime: Float = 0
     
     struct Cannel: Codable {
         let id: String
         let name: String
         let url: String
         let mp4: String
-        
     }
-
+    
     @IBOutlet private weak var playerContainerView: UIView!
     @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
-            tweet()
+            if let item = item {
+                let currendSecond: Float = Float(CMTimeGetSeconds(item.currentTime()))
+                startTime = currendSecond
+            }
         } else if sender.state == .ended {
-            //            let url = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
-            //            //    TODO: 取得した時間で指定する
-            //            let startTime = Float(30)
-            //            let duration  = Float(15)
-            //            let frameRate = 15
-            //            Regift.createGIFFromSource(url, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
-            //                print("Gif saved to \(String(describing: result))")
-            //            }
+            if let item = item {
+                let currendSecond: Float = Float(CMTimeGetSeconds(item.currentTime()))
+                endTime = currendSecond
+            }
+            let url = URL(string: channel!.mp4)!
+            //    TODO: 取得した時間で指定する
+            let startTime = Float(30)
+            let duration  = Float(15)
+            let frameRate = 15
+            Regift.createGIFFromSource(url, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
+                print("Gif saved to \(String(describing: result))")
+                //                tweet()
+            }
         }
     }
     
@@ -70,7 +81,7 @@ final class FeedCellViewController: UIViewController {
             return
         }
 
-        let item = AVPlayerItem(url: url)
+        item = AVPlayerItem(url: url)
         player.replaceCurrentItem(with: item)
         playerViewController.player = player
         player.play()
