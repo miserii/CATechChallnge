@@ -1,16 +1,16 @@
 PODS:
-  - Regift (1.5.0)
+  - Regift (1.6.0)
 
 DEPENDENCIES:
-  - Regift
+  - Regift (~> 1.6.0)
 
 SPEC REPOS:
   trunk:
     - Regift
 
 SPEC CHECKSUMS:
-  Regift: d097afd401021f4f42b102ee125ceeb125a38caf
+  Regift: a7c1a7e377c60bfc34301d6f532e099e5ae109a8
 
-PODFILE CHECKSUM: c8c7cffa745004c0c576b7cd703acf3cf11548be
+PODFILE CHECKSUM: 5b8e7a26bc7c4ccd2b7a8b47e0169872402a1a21
 
 COCOAPODS: 1.9.3

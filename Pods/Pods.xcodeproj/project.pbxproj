@@ -473,7 +473,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		257497152829C177993B5EC99C1D227A /* Release */ = {
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -521,7 +521,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,40 +533,17 @@
 			};
 			name = Release;
 		};
-		358D0F8F386E1A96E54FBCE90469C575 /* Release */ = {
+		242190BF53148BC74A7BB986842D2A38 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CE898AF53AC07FAA3CA7140BE7CB048 /* Pods-FeedSampleTests.release.xcconfig */;
+			baseConfigurationReference = A14DAF1623555FCE74B510A7407B275A /* Regift.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FeedSampleTests/Pods-FeedSampleTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		3DA04EE91C690C6E5020A0F06D17B8B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14DAF1623555FCE74B510A7407B275A /* Regift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MODULEMAP_FILE = Headers/Public/Regift/Regift.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -583,7 +560,79 @@
 			};
 			name = Release;
 		};
-		3ECC7E04071A9D18A9ABB31342DFDC99 /* Release */ = {
+		4F76C6B77E338335DAE3FA630777D221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0ABC557E1711F0B4BB2AD983DA0CA82 /* Pods-FeedSample-FeedSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948B7CCE5B946D38026008EAF480CEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A294F2D09DD64A90B41F47307E6A5688 /* Pods-FeedSampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FeedSampleTests/Pods-FeedSampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E4E895FF7BCCE4DCD529C5CBB0CB249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB040ACA0C4D831B428E457A905D584C /* Regift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MODULEMAP_FILE = Headers/Public/Regift/Regift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Regift;
+				PRODUCT_NAME = Regift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED68AD2C4A20C8AC2FAF10E709C465B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5E688F61F131BF6CAC5C2974F79D516 /* Pods-FeedSample.release.xcconfig */;
 			buildSettings = {
@@ -593,7 +642,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FeedSample/Pods-FeedSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -607,30 +656,7 @@
 			};
 			name = Release;
 		};
-		86BC6C5AC61F39ADE4505619A0C9265A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A294F2D09DD64A90B41F47307E6A5688 /* Pods-FeedSampleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FeedSampleTests/Pods-FeedSampleTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		965F3E5E71381169EA92529E902CC191 /* Debug */ = {
+		D9DBE2858B6543E47D2FD18CCC550DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61E5810744D9712F36D5D9824F2B92DD /* Pods-FeedSample.debug.xcconfig */;
 			buildSettings = {
@@ -640,7 +666,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FeedSample/Pods-FeedSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -653,30 +679,7 @@
 			};
 			name = Debug;
 		};
-		BA3DCD9EF8224951E71E9AAD4F61FF3D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0ABC557E1711F0B4BB2AD983DA0CA82 /* Pods-FeedSample-FeedSampleUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -727,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -740,7 +743,7 @@
 			};
 			name = Debug;
 		};
-		F1D71FAD4D24D16425544D56F15310D2 /* Release */ = {
+		F8C80D2F964C2B8DF627132A20588726 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B76B23266CD7F7F963896F36103E381 /* Pods-FeedSample-FeedSampleUITests.release.xcconfig */;
 			buildSettings = {
@@ -750,7 +753,7 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -764,30 +767,29 @@
 			};
 			name = Release;
 		};
-		F27CC52E36EE6338210BB0A70BCFC5E6 /* Debug */ = {
+		FB149A0A387D97E1806B2B41A3BC43D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB040ACA0C4D831B428E457A905D584C /* Regift.debug.xcconfig */;
+			baseConfigurationReference = 1CE898AF53AC07FAA3CA7140BE7CB048 /* Pods-FeedSampleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/Regift/Regift.modulemap;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FeedSampleTests/Pods-FeedSampleTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Regift;
-				PRODUCT_NAME = Regift;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -795,8 +797,8 @@
 		178EB6CFF81205349D26BFA1F6D5B8D1 /* Build configuration list for PBXNativeTarget "Regift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F27CC52E36EE6338210BB0A70BCFC5E6 /* Debug */,
-				3DA04EE91C690C6E5020A0F06D17B8B1 /* Release */,
+				9E4E895FF7BCCE4DCD529C5CBB0CB249 /* Debug */,
+				242190BF53148BC74A7BB986842D2A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -804,8 +806,8 @@
 		2254EFF405AF68362199F7FC0FCFFFF7 /* Build configuration list for PBXNativeTarget "Pods-FeedSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86BC6C5AC61F39ADE4505619A0C9265A /* Debug */,
-				358D0F8F386E1A96E54FBCE90469C575 /* Release */,
+				948B7CCE5B946D38026008EAF480CEB2 /* Debug */,
+				FB149A0A387D97E1806B2B41A3BC43D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -813,8 +815,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
-				257497152829C177993B5EC99C1D227A /* Release */,
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -822,8 +824,8 @@
 		A8C2FC8C97A747E4F37FC81E45A35E5B /* Build configuration list for PBXNativeTarget "Pods-FeedSample-FeedSampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA3DCD9EF8224951E71E9AAD4F61FF3D /* Debug */,
-				F1D71FAD4D24D16425544D56F15310D2 /* Release */,
+				4F76C6B77E338335DAE3FA630777D221 /* Debug */,
+				F8C80D2F964C2B8DF627132A20588726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -831,8 +833,8 @@
 		AC440BB0D1CE8854FE744E264269FB5B /* Build configuration list for PBXNativeTarget "Pods-FeedSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				965F3E5E71381169EA92529E902CC191 /* Debug */,
-				3ECC7E04071A9D18A9ABB31342DFDC99 /* Release */,
+				D9DBE2858B6543E47D2FD18CCC550DA2 /* Debug */,
+				BED68AD2C4A20C8AC2FAF10E709C465B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
