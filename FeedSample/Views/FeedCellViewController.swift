@@ -7,6 +7,14 @@ final class FeedCellViewController: UIViewController {
 
     private(set) var channel: Channel?
     private(set) var page: Int?
+    
+    struct Cannel: Codable {
+        let id: String
+        let name: String
+        let url: String
+        let mp4: String
+        
+    }
 
     @IBOutlet private weak var playerContainerView: UIView!
     @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
