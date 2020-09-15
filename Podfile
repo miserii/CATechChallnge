@@ -4,6 +4,7 @@
 target 'FeedSample' do
   pod "Regift", '~> 1.6.0'
   pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
+  pod 'Firebase/Analytics'
   # Comment the next line if you don't want to use dynamic frameworks
   
   # Pods for FeedSample
@@ -11,6 +12,7 @@ target 'FeedSample' do
   target 'FeedSampleTests' do
   pod "Regift", '~> 1.6.0'
   pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
+  pod 'Firebase/Analytics'
     inherit! :search_paths
     # Pods for testing
   end
@@ -19,6 +21,7 @@ target 'FeedSample' do
     # Pods for testing
   pod "Regift", '~> 1.6.0'
   pod 'Swifter', :git => 'https://github.com/mattdonnelly/Swifter.git'
+  pod 'Firebase/Analytics'
   end
 
 end

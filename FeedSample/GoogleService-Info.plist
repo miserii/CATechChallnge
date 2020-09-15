@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>751009078587-pr2a71m70fqbpmmqlfanoa1foc8rm0ag.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.751009078587-pr2a71m70fqbpmmqlfanoa1foc8rm0ag</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDuIMW_p9OguaaB34mlYYDL0nQAATQQr3g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>751009078587</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.co.cyberagent.FeedSample</string>
+	<key>PROJECT_ID</key>
+	<string>catech-c5c8e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>catech-c5c8e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:751009078587:ios:a69b9e1e0cbc16a166eb1e</string>
+	<key>DATABASE_URL</key>
+	<string>https://catech-c5c8e.firebaseio.com</string>
+</dict>
+</plist>

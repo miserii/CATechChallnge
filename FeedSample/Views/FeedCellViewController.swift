@@ -12,13 +12,6 @@ final class FeedCellViewController: UIViewController {
     private(set) var startTime: Double = 0
     private(set) var endTime: Double = 0
     
-    struct Cannel: Codable {
-        let id: String
-        let name: String
-        let url: String
-        let mp4: String
-    }
-    
     @IBOutlet private weak var playerContainerView: UIView!
     @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
