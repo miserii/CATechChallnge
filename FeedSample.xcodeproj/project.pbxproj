@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466B20DB251083910020FBC8 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DA251083910020FBC8 /* test.gif */; };
 		56B723AA907772FA2211FB51 /* libPods-FeedSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C169C4DF3AD700AAD87C4DC /* libPods-FeedSample.a */; };
 		A26D8AFBE4F29721BF28BE94 /* libPods-FeedSample-FeedSampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A2971573B897F7B4D6CC72 /* libPods-FeedSample-FeedSampleUITests.a */; };
 		A66D5ACF250E2F59001059C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66D5ACE250E2F59001059C2 /* Comment.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		2C169C4DF3AD700AAD87C4DC /* libPods-FeedSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C80F6438C0DBE92C65D8280 /* Pods-FeedSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedSampleTests/Pods-FeedSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		466B20DA251083910020FBC8 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		521365EF858B861399673478 /* Pods-FeedSample-FeedSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedSample-FeedSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7A192A15DBFB96C672ED8CD7 /* Pods-FeedSample-FeedSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedSample-FeedSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-FeedSample-FeedSampleUITests/Pods-FeedSample-FeedSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D7ED2774D1C3F16976B7B76 /* libPods-FeedSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +226,7 @@
 				FFB25CA1230CDD6700CBB221 /* Utilities */,
 				FFB25CA8230CE94E00CBB221 /* Views */,
 				FFBB477122F139E700C3A573 /* AppDelegate.swift */,
+				466B20DA251083910020FBC8 /* test.gif */,
 				FFBB477822F139F000C3A573 /* Assets.xcassets */,
 				FFBB477D22F139F000C3A573 /* Info.plist */,
 				FFBB477A22F139F000C3A573 /* LaunchScreen.storyboard */,
@@ -366,6 +369,7 @@
 				FFBB477722F139E700C3A573 /* FeedViewController.storyboard in Resources */,
 				FFBB477C22F139F000C3A573 /* LaunchScreen.storyboard in Resources */,
 				FFB25C9422FD703000CBB221 /* program.json in Resources */,
+				466B20DB251083910020FBC8 /* test.gif in Resources */,
 				FFB25CA5230CDF4B00CBB221 /* FeedCellViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

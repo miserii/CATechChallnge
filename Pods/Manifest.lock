@@ -1,16 +1,28 @@
 PODS:
   - Regift (1.6.0)
+  - Swifter (2.4.0)
 
 DEPENDENCIES:
   - Regift (~> 1.6.0)
+  - Swifter (from `https://github.com/mattdonnelly/Swifter.git`)
 
 SPEC REPOS:
   trunk:
     - Regift
 
+EXTERNAL SOURCES:
+  Swifter:
+    :git: https://github.com/mattdonnelly/Swifter.git
+
+CHECKOUT OPTIONS:
+  Swifter:
+    :commit: 7906c9476f612fc2a77c38f4731d4bc618cea6a8
+    :git: https://github.com/mattdonnelly/Swifter.git
+
 SPEC CHECKSUMS:
   Regift: a7c1a7e377c60bfc34301d6f532e099e5ae109a8
+  Swifter: 0955a05325dc182fabfb1468305aef887180e0f1
 
-PODFILE CHECKSUM: 5b8e7a26bc7c4ccd2b7a8b47e0169872402a1a21
+PODFILE CHECKSUM: a4141942ee51a7414de558da7a7ad68a63c4aa20
 
 COCOAPODS: 1.9.3

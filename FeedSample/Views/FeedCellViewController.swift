@@ -1,6 +1,7 @@
 import AVKit
 import UIKit
 import Regift
+import Swifter
 
 final class FeedCellViewController: UIViewController {
 
@@ -12,50 +13,16 @@ final class FeedCellViewController: UIViewController {
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
+            tweet()
         } else if sender.state == .ended {
-            let url = URL(string: "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_01.m3u8")!
-            //    TODO: 取得した時間で指定する
-            let startTime = Float(1)
-            let duration = Float(5)
-            let frameRate = 15
-//            guard let url = URL(string: url) else { return }
-            guard let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-            URLSession.shared.downloadTask(with: url) { (location, response, error) -> Void in
-                guard let location = location else { return }
-                let destinationURL = documentsDirectoryURL.appendingPathComponent(response?.suggestedFilename ?? url.lastPathComponent)
-                print(location)
-                print(destinationURL)
-                do {
-                    let isExit = FileManager.default.fileExists(atPath: documentsDirectoryURL.appendingPathComponent(url.lastPathComponent).path)
-                    if isExit {
-                        try FileManager.default.removeItem(at: documentsDirectoryURL.appendingPathComponent(url.lastPathComponent))
-                    }
-                    try FileManager.default.moveItem(at: location, to: destinationURL)
-                    let item = AVPlayerItem(url: destinationURL)
-                    let exportSession = AVAssetExportSession(asset: item.asset, presetName: AVAssetExportPresetPassthrough)
-                    exportSession?.outputFileType = AVFileType.mp4
-                    exportSession?.outputURL = destinationURL.appendingPathComponent("store/mp4")
-                    exportSession?.canPerformMultiplePassesOverSourceMediaData = true
-                    exportSession?.exportAsynchronously { () -> Void in
-                        switch exportSession!.status {
-                        case AVAssetExportSession.Status.completed:
-                            print(exportSession?.directoryForTemporaryFiles as Any)
-                            Regift.createGIF(fromAsset: item.asset, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
-                                print("Gif saved to \(String(describing: result))")
-                            }
-                            // mp4に変換できた
-                            break
-                        case AVAssetExportSession.Status.failed:
-                            print(exportSession?.error as Any)
-                            break
-                        case AVAssetExportSession.Status.cancelled:
-                            break
-                        default:
-                            break
-                        }
-                    }
-                } catch { print(error) }
-            }.resume()
+            //            let url = URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!
+            //            //    TODO: 取得した時間で指定する
+            //            let startTime = Float(30)
+            //            let duration  = Float(15)
+            //            let frameRate = 15
+            //            Regift.createGIFFromSource(url, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
+            //                print("Gif saved to \(String(describing: result))")
+            //            }
         }
     }
     
@@ -106,13 +73,29 @@ final class FeedCellViewController: UIViewController {
     }
     
     func tweet() {
-        //        TODO: GIF付きのツイートをする
-        let text = "ここにいい感じの文章\n#ハッシュタグ"
-        let encodedText = text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        if let encodedText = encodedText,
-            let url = URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)") {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        //    TODO: GIF付きのツイートをする
+        let swifter = Swifter(consumerKey: "3YZegq1DqWZWkWFA3ZpQRy7d6", consumerSecret: "cboDNBb3Ci54P8GYlg7paZYmhQRLRfSQlTTxFNyMbIC4irSZh8")
+        swifter.authorize(
+            withCallback: URL(string: "swifter-3YZegq1DqWZWkWFA3ZpQRy7d6://")!,
+            presentingFrom: self,
+            success: { accessToken, response in
+                print(response)
+                let imageData = try! Data(contentsOf: Bundle.main.url(forResource: "test", withExtension: "gif")!)
+                swifter.postMultipartMedia(imageData, type: .gif, category: .gif, success: { (json) in
+                    print(json)
+                }, failure: {(error) in
+                    print(error)
+                })
+        }, failure: { error in
+            print(error)
         }
+        )
+        //    let text = "ここにいい感じの文章\n#ハッシュタグ"
+        //    let encodedText = text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        //    if let encodedText = encodedText,
+        //      let url = URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)") {
+        //      UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        //    }
     }
     
     //    TODO: GIFが作成できたタイミングで出す
