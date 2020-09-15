@@ -18,17 +18,17 @@ final class FeedCellViewController: UIViewController {
             let startTime = Float(1)
             let duration = Float(5)
             let frameRate = 15
-            guard let videoURL = URL(string: url) else { return }
+//            guard let url = URL(string: url) else { return }
             guard let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-            URLSession.shared.downloadTask(with: videoURL) { (location, response, error) -> Void in
+            URLSession.shared.downloadTask(with: url) { (location, response, error) -> Void in
                 guard let location = location else { return }
-                let destinationURL = documentsDirectoryURL.appendingPathComponent(response?.suggestedFilename ?? videoURL.lastPathComponent)
+                let destinationURL = documentsDirectoryURL.appendingPathComponent(response?.suggestedFilename ?? url.lastPathComponent)
                 print(location)
                 print(destinationURL)
                 do {
-                    let isExit = FileManager.default.fileExists(atPath: documentsDirectoryURL.appendingPathComponent(videoURL.lastPathComponent).path)
+                    let isExit = FileManager.default.fileExists(atPath: documentsDirectoryURL.appendingPathComponent(url.lastPathComponent).path)
                     if isExit {
-                        try FileManager.default.removeItem(at: documentsDirectoryURL.appendingPathComponent(videoURL.lastPathComponent))
+                        try FileManager.default.removeItem(at: documentsDirectoryURL.appendingPathComponent(url.lastPathComponent))
                     }
                     try FileManager.default.moveItem(at: location, to: destinationURL)
                     let item = AVPlayerItem(url: destinationURL)
