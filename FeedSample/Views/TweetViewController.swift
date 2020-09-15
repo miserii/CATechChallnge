@@ -195,7 +195,7 @@ class TweetViewController: UIViewController {
 
 extension TweetViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
-        tweetText = textView.text
+        tweetText = textView.text + " #catechonline"
         wordCoundLabel.text = "\(textView.text.count)/140"
     }
 }
