@@ -4,6 +4,8 @@ struct Channel: Codable {
     let id: String
     let name: String
     let url: String
+    let mp4: String
+    
 }
 
 extension Channel {
