@@ -44,7 +44,7 @@ final class FeedCellViewController: UIViewController {
                         print(gifUrl)
                         let imageData = try! Data(contentsOf: gifUrl!)
                         DispatchQueue.main.async {
-                            self.alertAndTweet(string: "Gif Tweetできたかも", media: imageData)
+                            self.alertAndTweet(string: "#catechonline", media: imageData)
                         }
                     }
                 }
@@ -114,7 +114,6 @@ final class FeedCellViewController: UIViewController {
         }
     }
     
-    //    TODO: GIFが作成できたタイミングで出す
     func alertAndTweet(string: String, media: Data) {
         let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message: "作成したGIFをツイートする", preferredStyle: UIAlertController.Style.alert)
         let confirmAction: UIAlertAction = UIAlertAction(title: "ツイート", style: UIAlertAction.Style.default, handler:{

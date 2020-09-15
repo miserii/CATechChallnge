@@ -6,6 +6,9 @@ PODS:
     - FirebaseAnalytics (= 6.8.2)
   - Firebase/CoreOnly (6.32.2):
     - FirebaseCore (= 6.10.2)
+  - Firebase/DynamicLinks (6.32.2):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 4.3.0)
   - FirebaseAnalytics (6.8.2):
     - FirebaseCore (~> 6.10)
     - FirebaseInstallations (~> 1.6)
@@ -24,6 +27,8 @@ PODS:
     - GoogleUtilities/Environment (~> 6.7)
     - GoogleUtilities/Logger (~> 6.7)
     - nanopb (~> 1.30906.0)
+  - FirebaseDynamicLinks (4.3.0):
+    - FirebaseCore (~> 6.10)
   - FirebaseInstallations (1.7.0):
     - FirebaseCore (~> 6.10)
     - GoogleUtilities/Environment (~> 6.7)
@@ -67,6 +72,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Analytics
+  - Firebase/DynamicLinks
   - Regift (~> 1.6.0)
   - Swifter (from `https://github.com/mattdonnelly/Swifter.git`)
 
@@ -76,6 +82,7 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreDiagnostics
+    - FirebaseDynamicLinks
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -98,6 +105,7 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 3c2fee6a922023ccfda7af87e4e641bad1fc11ba
   FirebaseCore: 1d697bb944bf2af5fc248f1a66e165c9dd88bf97
   FirebaseCoreDiagnostics: 7415bfb3883b3500c5a95c42b6ba66baae78f600
+  FirebaseDynamicLinks: bab0682388b983f9b0044a1fb555606ddb0e9b7e
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   GoogleAppMeasurement: 1a66f478c68ecd6c16ee63ee60c7c3a648e6b337
   GoogleDataTransport: e85fb700c9b027079ce182c3d08e12e0f9618bb4
@@ -107,6 +115,6 @@ SPEC CHECKSUMS:
   Regift: a7c1a7e377c60bfc34301d6f532e099e5ae109a8
   Swifter: 0955a05325dc182fabfb1468305aef887180e0f1
 
-PODFILE CHECKSUM: 2fc9c38e5bf6911b1e44fa60df6e7193016b3175
+PODFILE CHECKSUM: a115057f296ea160174004cad1da383d6d95570b
 
 COCOAPODS: 1.9.3
