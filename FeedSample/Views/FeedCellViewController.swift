@@ -73,7 +73,6 @@ final class FeedCellViewController: UIViewController {
     }
     
     func tweet() {
-        //    TODO: GIF付きのツイートをする
         let swifter = Swifter(consumerKey: "3YZegq1DqWZWkWFA3ZpQRy7d6", consumerSecret: "cboDNBb3Ci54P8GYlg7paZYmhQRLRfSQlTTxFNyMbIC4irSZh8")
         swifter.authorize(
             withCallback: URL(string: "swifter-3YZegq1DqWZWkWFA3ZpQRy7d6://")!,
@@ -81,25 +80,11 @@ final class FeedCellViewController: UIViewController {
             success: { accessToken, response in
                 print(response)
                 let imageData = try! Data(contentsOf: Bundle.main.url(forResource: "test", withExtension: "gif")!)
-//                swifter.postTweetWithGif(attachmentUrl: URL(string: "https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif")!, text: "#テストツイート")
-//                swifter.postTweet(status: "テストツイート")
                 swifter.postTweet(status: "テストツイート", media: imageData)
-//                swifter.postMultipartMedia(imageData, type: .gif, category: .gif, success: { (json) in
-//                    print(json)
-//                }, failure: {(error) in
-//                    print(error)
-//                })
         }, failure: { error in
             print(error)
         }
         )
-        
-        //    let text = "ここにいい感じの文章\n#ハッシュタグ"
-        //    let encodedText = text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-        //    if let encodedText = encodedText,
-        //      let url = URL(string: "https://twitter.com/intent/tweet?text=\(encodedText)") {
-        //      UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        //    }
     }
     
     //    TODO: GIFが作成できたタイミングで出す
