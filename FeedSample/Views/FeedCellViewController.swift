@@ -12,21 +12,50 @@ final class FeedCellViewController: UIViewController {
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             print("ロングタップスタート")
-            //            ここでstartTime取得
         } else if sender.state == .ended {
-            /*
-             TODO: URL変換
-             let videoURL   = URL(string: "これどうやって取得するん、、")!
-             TODO: 取得した時間で指定する
-             let startTime = Float(30)
-             let duration  = Float(15)
-             let frameRate = 15
-             
-             Regift.createGIFFromSource(videoURL, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
-             print("Gif saved to \(String(describing: result))")
-             }
-             */
-            alert()
+            let url = URL(string: "https://github.com/CyberAgentHack/abemahack-sample-video/raw/master/assets/hls/abema_test_hls_movie_01.m3u8")!
+            //    TODO: 取得した時間で指定する
+            let startTime = Float(1)
+            let duration = Float(5)
+            let frameRate = 15
+            guard let videoURL = URL(string: url) else { return }
+            guard let documentsDirectoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+            URLSession.shared.downloadTask(with: videoURL) { (location, response, error) -> Void in
+                guard let location = location else { return }
+                let destinationURL = documentsDirectoryURL.appendingPathComponent(response?.suggestedFilename ?? videoURL.lastPathComponent)
+                print(location)
+                print(destinationURL)
+                do {
+                    let isExit = FileManager.default.fileExists(atPath: documentsDirectoryURL.appendingPathComponent(videoURL.lastPathComponent).path)
+                    if isExit {
+                        try FileManager.default.removeItem(at: documentsDirectoryURL.appendingPathComponent(videoURL.lastPathComponent))
+                    }
+                    try FileManager.default.moveItem(at: location, to: destinationURL)
+                    let item = AVPlayerItem(url: destinationURL)
+                    let exportSession = AVAssetExportSession(asset: item.asset, presetName: AVAssetExportPresetPassthrough)
+                    exportSession?.outputFileType = AVFileType.mp4
+                    exportSession?.outputURL = destinationURL.appendingPathComponent("store/mp4")
+                    exportSession?.canPerformMultiplePassesOverSourceMediaData = true
+                    exportSession?.exportAsynchronously { () -> Void in
+                        switch exportSession!.status {
+                        case AVAssetExportSession.Status.completed:
+                            print(exportSession?.directoryForTemporaryFiles as Any)
+                            Regift.createGIF(fromAsset: item.asset, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
+                                print("Gif saved to \(String(describing: result))")
+                            }
+                            // mp4に変換できた
+                            break
+                        case AVAssetExportSession.Status.failed:
+                            print(exportSession?.error as Any)
+                            break
+                        case AVAssetExportSession.Status.cancelled:
+                            break
+                        default:
+                            break
+                        }
+                    }
+                } catch { print(error) }
+            }.resume()
         }
     }
     
