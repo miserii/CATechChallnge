@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		466B20DB251083910020FBC8 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DA251083910020FBC8 /* test.gif */; };
+		466B20E12510C8C60020FBC8 /* abema_test_movie_01 (1).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DE2510C2890020FBC8 /* abema_test_movie_01 (1).mp4 */; };
+		466B20E22510C8C60020FBC8 /* abema_test_movie_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DF2510C28A0020FBC8 /* abema_test_movie_01.mp4 */; };
+		466B20E32510C8C60020FBC8 /* abema_test_movie_02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20E02510C28B0020FBC8 /* abema_test_movie_02.mp4 */; };
+		466B20E42510C8C60020FBC8 /* abema_test_movie_03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DC2510C2850020FBC8 /* abema_test_movie_03.mp4 */; };
+		466B20E52510C8C60020FBC8 /* abema_test_movie_05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 466B20DD2510C2870020FBC8 /* abema_test_movie_05.mp4 */; };
 		56B723AA907772FA2211FB51 /* libPods-FeedSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C169C4DF3AD700AAD87C4DC /* libPods-FeedSample.a */; };
 		A26D8AFBE4F29721BF28BE94 /* libPods-FeedSample-FeedSampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A2971573B897F7B4D6CC72 /* libPods-FeedSample-FeedSampleUITests.a */; };
 		A66D5ACF250E2F59001059C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66D5ACE250E2F59001059C2 /* Comment.swift */; };
@@ -372,6 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466B20E12510C8C60020FBC8 /* abema_test_movie_01 (1).mp4 in Resources */,
+				466B20E22510C8C60020FBC8 /* abema_test_movie_01.mp4 in Resources */,
+				466B20E32510C8C60020FBC8 /* abema_test_movie_02.mp4 in Resources */,
+				466B20E42510C8C60020FBC8 /* abema_test_movie_03.mp4 in Resources */,
+				466B20E52510C8C60020FBC8 /* abema_test_movie_05.mp4 in Resources */,
 				FFBB477922F139F000C3A573 /* Assets.xcassets in Resources */,
 				FFB25C9022FD702200CBB221 /* broadcast.json in Resources */,
 				FFB25C9222FD702900CBB221 /* channels.json in Resources */,

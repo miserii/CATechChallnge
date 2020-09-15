@@ -23,7 +23,6 @@ final class FeedCellViewController: UIViewController {
     @IBOutlet var longTapSensor: UILongPressGestureRecognizer!
     @IBAction func timeSensor(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            print("ロングタップスタート")
             if let item = item {
                 let currendSecond: Double = Double(CMTimeGetSeconds(item.currentTime()))
                 startTime = currendSecond
@@ -32,15 +31,30 @@ final class FeedCellViewController: UIViewController {
             if let item = item {
                 let currendSecond: Double = Double(CMTimeGetSeconds(item.currentTime()))
                 endTime = currendSecond
-            }
-            let url = URL(string: channel!.mp4)!
-            //    TODO: 取得した時間で指定する
-            let startTime = Float(30)
-            let duration  = Float(15)
-            let frameRate = 15
-            Regift.createGIFFromSource(url, startTime: startTime, duration: duration, frameRate: frameRate) { (result) in
-                print("Gif saved to \(String(describing: result))")
-                //                tweet()
+                var sourceURL: URL!
+                if let channel = channel {
+                    if channel.id == "ch-0" {
+                        sourceURL = Bundle.main.url(forResource: "abema_test_movie_01", withExtension: "mp4")
+                    } else if channel.id == "ch-1" {
+                        sourceURL = Bundle.main.url(forResource: "abema_test_movie_02", withExtension: "mp4")
+                    } else if channel.id == "ch-2" {
+                        sourceURL = Bundle.main.url(forResource: "abema_test_movie_03", withExtension: "mp4")
+                    } else if channel.id == "ch-3" {
+                        sourceURL = Bundle.main.url(forResource: "abema_test_movie_04", withExtension: "mp4")
+                    } else if channel.id == "ch-4" {
+                        sourceURL = Bundle.main.url(forResource: "abema_test_movie_05", withExtension: "mp4")
+                    }
+                }
+                cropVideo(sourceURL: sourceURL, startTime: startTime, endTime: endTime) { (mp4Url) in
+                    //print(mp4Url)
+                    Regift.createGIFFromSource(mp4Url, frameCount: 20, delayTime: 2.0) { (gifUrl) in
+                        print(gifUrl)
+                        let imageData = try! Data(contentsOf: gifUrl!)
+                        DispatchQueue.main.async {
+                            self.alertAndTweet(string: "Gif Tweetできたかも", media: imageData)
+                        }
+                    }
+                }
             }
         }
     }
@@ -91,33 +105,73 @@ final class FeedCellViewController: UIViewController {
         playerViewController.player = nil
     }
     
-    func tweet() {
+    func tweet(string: String, media: Data) {
         let swifter = Swifter(consumerKey: "3YZegq1DqWZWkWFA3ZpQRy7d6", consumerSecret: "cboDNBb3Ci54P8GYlg7paZYmhQRLRfSQlTTxFNyMbIC4irSZh8")
         swifter.authorize(
             withCallback: URL(string: "swifter-3YZegq1DqWZWkWFA3ZpQRy7d6://")!,
             presentingFrom: nil,
             success: { accessToken, response in
-                print(response)
-                let imageData = try! Data(contentsOf: Bundle.main.url(forResource: "test", withExtension: "gif")!)
-                swifter.postTweet(status: "テストツイート", media: imageData)
-        }, failure: { error in
+                swifter.postTweet(status: string, media: media, success: { (json) in
+                    print(json)
+                }, failure: { (error) in
+                    print(error)
+                })
+        }) { error in
             print(error)
         }
-        )
     }
     
     //    TODO: GIFが作成できたタイミングで出す
-    func alert() {
-        let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message:  "作成したGIFをツイートする", preferredStyle:  UIAlertController.Style.alert)
+    func alertAndTweet(string: String, media: Data) {
+        let alert: UIAlertController = UIAlertController(title: "GIFが作成されました", message: "作成したGIFをツイートする", preferredStyle: UIAlertController.Style.alert)
         let confirmAction: UIAlertAction = UIAlertAction(title: "ツイート", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
+            alert.dismiss(animated: true) {
+                self.tweet(string: string, media: media)
+            }
         })
         let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
             (action: UIAlertAction!) -> Void in
+            alert.dismiss(animated: true, completion: nil)
         })
         alert.addAction(cancelAction)
         alert.addAction(confirmAction)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func cropVideo(sourceURL: URL, startTime: Double, endTime: Double, completion: ((_ outputUrl: URL) -> Void)? = nil) {
+        let fileManager = FileManager.default
+        let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let asset = AVAsset(url: sourceURL)
+        let length = Float(asset.duration.value) / Float(asset.duration.timescale)
+        print("video length: \(length) seconds")
+        var outputURL = documentDirectory.appendingPathComponent("output")
+        do {
+            try fileManager.createDirectory(at: outputURL, withIntermediateDirectories: true, attributes: nil)
+            outputURL = outputURL.appendingPathComponent("\(sourceURL.lastPathComponent).mp4")
+        }catch let error {
+            print(error)
+        }
+        //Remove existing file
+        try? fileManager.removeItem(at: outputURL)
+        guard let exportSession = AVAssetExportSession(asset: asset, presetName: AVAssetExportPresetLowQuality) else { return }
+        exportSession.outputURL = outputURL
+        exportSession.outputFileType = .mp4
+        let timeRange = CMTimeRange(start: CMTime(seconds: startTime, preferredTimescale: 1000),
+                                    end: CMTime(seconds: endTime, preferredTimescale: 1000))
+        exportSession.timeRange = timeRange
+        exportSession.exportAsynchronously {
+            switch exportSession.status {
+            case .completed:
+                print("exported at \(outputURL)")
+                completion?(outputURL)
+            case .failed:
+                print("failed \(exportSession.error.debugDescription)")
+            case .cancelled:
+                print("cancelled \(exportSession.error.debugDescription)")
+            default: break
+            }
+        }
     }
 }
 
