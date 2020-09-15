@@ -104,7 +104,7 @@ class TweetViewController: UIViewController {
         wordCoundLabel.trailingAnchor.constraint(equalTo: textView.trailingAnchor, constant: 0).isActive = true
         
         let tweetButton = UIButton()
-        tweetButton.setTitle("Tweetする！", for: UIControl.State())
+        tweetButton.setTitle("GIFをツイートする", for: UIControl.State())
         tweetButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
         tweetButton.setTitleColor(.white, for: UIControl.State())
         tweetButton.contentHorizontalAlignment = .center
