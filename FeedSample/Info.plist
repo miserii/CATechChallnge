@@ -24,6 +24,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>abema://</string>
+				<string>https://abematv.page.link</string>
 			</array>
 		</dict>
 		<dict>
