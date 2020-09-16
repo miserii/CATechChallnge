@@ -128,6 +128,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46E837062511A442000F5472 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				466B20DF2510C28A0020FBC8 /* abema_test_movie_01.mp4 */,
+				466B20E02510C28B0020FBC8 /* abema_test_movie_02.mp4 */,
+				466B20DC2510C2850020FBC8 /* abema_test_movie_03.mp4 */,
+				466B20E82510E76B0020FBC8 /* abema_test_movie_04.mp4 */,
+				466B20DD2510C2870020FBC8 /* abema_test_movie_05.mp4 */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		94D48A9C54712D4C56E8FA29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,11 +253,7 @@
 				FFB25CA1230CDD6700CBB221 /* Utilities */,
 				FFB25CA8230CE94E00CBB221 /* Views */,
 				FFBB477122F139E700C3A573 /* AppDelegate.swift */,
-				466B20DF2510C28A0020FBC8 /* abema_test_movie_01.mp4 */,
-				466B20E02510C28B0020FBC8 /* abema_test_movie_02.mp4 */,
-				466B20DC2510C2850020FBC8 /* abema_test_movie_03.mp4 */,
-				466B20E82510E76B0020FBC8 /* abema_test_movie_04.mp4 */,
-				466B20DD2510C2870020FBC8 /* abema_test_movie_05.mp4 */,
+				46E837062511A442000F5472 /* Movies */,
 				FFBB477822F139F000C3A573 /* Assets.xcassets */,
 				FFBB477D22F139F000C3A573 /* Info.plist */,
 				466B20E62510DE7F0020FBC8 /* GoogleService-Info.plist */,
