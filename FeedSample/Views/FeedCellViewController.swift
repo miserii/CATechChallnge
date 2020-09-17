@@ -76,18 +76,19 @@ final class FeedCellViewController: UIViewController {
             playerViewController.view.bottomAnchor.constraint(equalTo: playerContainerView.bottomAnchor),
         ])
     }
-
+    
     func play(with player: AVPlayer) {
         guard let channel = channel else {
             assertionFailure("should not reach here")
             return
         }
-
-        guard let url = URL(string: channel.url) else {
+        
+        //        URL(string: channel.url) 動画URL非公開なので個別指定
+        guard let url = Bundle.main.url(forResource: "abema_test_movie_01", withExtension: "mp4") else {
             assertionFailure("invalid URL")
             return
         }
-
+        
         item = AVPlayerItem(url: url)
         player.replaceCurrentItem(with: item)
         playerViewController.player = player
