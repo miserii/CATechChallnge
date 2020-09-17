@@ -1,8 +1,12 @@
+<!--
 # abemahack-native-ios
 
-<p align="center">
-	<img src="https://github.com/CyberAgentHack/abemahack-native-201909-ios/blob/master/Assets/logo.png" width="800">
-</p>
+	<p align="center">
+		<img src="https://github.com/CyberAgentHack/abemahack-native-201909-ios/blob/master/Assets/logo.png" width="800">
+	</p>
+
+-->
+
 
 ## Requirement
 
