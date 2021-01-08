@@ -7,6 +7,11 @@
 
 -->
 
+## CATechChallnge
+
+Application created as a summer intern (CATechChallnge)
+Create GIFs and tweet them by holding down the video you are watching.
+
 
 ## Requirement
 
