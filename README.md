@@ -1,8 +1,8 @@
-## CATechChallnge
+# CATechChallnge
 - Application created as a summer intern (CATechChallnge)
 - Create GIFs and tweet them by holding down the video you are watching.
 
-## Requirement
+# Requirement
 [![Language](https://img.shields.io/badge/language-Swift%205.2.4-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-11.5-blue.svg)](https://developer.apple.com/xcode)
 
@@ -11,7 +11,7 @@
 - Firebase
 
 # アーキテクチャ
-
+MVC
 
 # Author
 miserii
