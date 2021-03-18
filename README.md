@@ -9,6 +9,7 @@
 # 使った技術
 - Regift
 - Firebase
+- Swifter
 
 # アーキテクチャ
 MVC
